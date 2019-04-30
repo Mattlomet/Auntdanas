@@ -17,22 +17,30 @@ class App extends Component{
     return(
       
       (this.state.firstPage)
-      ?<div>
+      ?<div className="mainContainer hero ">
+        <div>
         <Banner/>
-        <div class="columns">
-  <div class="column landingPageBox has-background-grey-lighter has-text-info">
+
+        </div>
+        <div class="columns landingPageParent ">
+  <div class="column landingPageBox  ">
       <a href="https://www.paperlessibclc.com/store/billing-and-coding" target="_blank">
-    <div className="is-size-2">
+    <div className="is-size-2 blueText">
       Crash Course
     </div>
+    <p className="purpleText">
     in billing & reimbursment for IBCLC's
+    </p>
       </a>
   </div>
-  <div class="column landingPageBox has-background-grey-lighter has-text-info">
-  <div className="is-size-2" onClick={this.toggleHomePage}>
+  <div class="column landingPageBox ">
+  <div className="is-size-2 blueText" onClick={this.toggleHomePage}>
       Lactation Billing
     </div>
+    <p className="purpleText">
     coding & billing, insurance info, lactation consultant, IBCLC's
+
+    </p>
   </div>
 </div>
         </div>

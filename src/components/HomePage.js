@@ -1,36 +1,102 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Banner from './Banner'
+import Billing from './Content/Billing'
+import NavBar from './NavBar.js'
+class HomePage extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      loadedContent: true,
+      renderedComponent: 0,
+    }
+  }
+  contentRender = (event)=>{
+    
 
-function HomePage(){
+    if(event.target.id === "steps"){
+      this.setState({
+        renderedComponent: "first3steps",
+        loadedContent: false
+      })
+    }if( event.target.id === "where"){
+      this.setState({
+        renderedComponent: "hello",
+        loadedContent: false
+
+      })
+    } if( event.target.id === "medicaid"){
+      this.setState({
+        renderedComponent: "hello",
+        loadedContent: false
+
+      })
+    } if(event.target.id=== "billing"){
+      this.setState({
+        renderedComponent: <Billing/>,
+        loadedContent: false
+
+      })
+    } if( event.target.id === "docs"){
+      this.setState({
+        renderedComponent: "hello",
+        loadedContent: false
+
+      })
+    }else if( event.target.id === "faqs"){
+      this.setState({
+        renderedComponent: "hello",
+        loadedContent: false
+
+      })
+    }
+
+  }
+  navReset = ()=>{
+    this.setState({
+      loadedContent: true
+    })
+  }
+  render(){
     return(
-        <div>
-            <Banner/>
-            <div class="columns">
-  <div class="column homePageBox has-background-grey-lighter has-text-info ">
-    First 3 Steps
-  </div>
-  <div class="column homePageBox has-background-grey-lighter has-text-info">
-    Where Are You Now?
-  </div>
-  <div class="column homePageBox has-background-grey-lighter has-text-info">
-    Medicaid & RN IBCLC
-  </div>
-  
-</div>
-<div class="columns">
-  <div class="column homePageBox has-background-grey-lighter has-text-info">
-    Billing for Mom & Dad
-  </div>
-  <div class="column homePageBox has-background-grey-lighter has-text-info">
-    Integration with Docs
-  </div>
-  <div class="column homePageBox has-background-grey-lighter has-text-info">
-    FAQs
-  </div>
-  
-</div>
+      <div>
+      <Banner/>
+      {
+        (this.state.loadedContent)
+        ?<div>
+<div class="columns outerMargin">
+        <div class="column homePageBox  blueText" id="steps" onClick={this.contentRender}>
+        First 3 Steps
         </div>
+        <div class="column homePageBox  blueText" id="where" onClick={this.contentRender}>
+        Where Are You Now?
+        </div>
+        <div class="column homePageBox  blueText" id="medicaid" onClick={this.contentRender}>
+        Medicaid & RN IBCLC
+        </div>
+        
+        </div>
+        <div class="columns outerMargin">
+        <div class="column homePageBox  blueText" id="billing" onClick={this.contentRender}>
+        Billing for Mom & Dad
+        </div>
+        <div class="column homePageBox  blueText" id="docs"onClick={this.contentRender}>
+        Integration with Docs
+        </div>
+        <div class="column homePageBox  blueText" id="faqs" onClick={this.contentRender}>
+        FAQs
+        </div>
+        </div>
+        </div>
+        
+        :<div>
+          <NavBar resetProps={this.navReset}/>
+        {this.state.renderedComponent}
+        </div>
+      }
+        
+    </div>
     )
+  }
 }
 
 export default HomePage;

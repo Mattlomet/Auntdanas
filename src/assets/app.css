@@ -1,21 +1,58 @@
 *{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+
 }
 a, a:hover{
     all: unset;
 }
-
+.mainContainer{
+ 
+}
+.landingPageParent{
+    border-top: 7px double #98047E;
+}
 .landingPageBox{
     margin: 5%;
-    padding: 5%;
-    box-shadow: 0px -5px 15px -11px black;
+    padding: 2.5%;
+    box-shadow: 2px -3px 25px -18px black;
+    border: 2px solid rgba(160, 160, 160, 0.212);
     cursor: pointer;
 }
 .homePageBox{
     margin: 2.5%;
     padding: 2.5%;
-    box-shadow: 0px -5px 15px -11px black;
-    border-radius: 10%;
+    box-shadow: 2px -3px 25px -18px black;
+    border: 2px solid rgba(160, 160, 160, 0.212);
+    cursor: pointer;
+}
+.coloredBG{
+}
+.roundLogo{
+    border-radius: 100%;
+}
+.blueText{
+    color: #6196C0;
+}
+.purpleText{
+    color: #98047E;
+}
+.outerMargin{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 2%;
+}
+.paragraphMargin{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.cancelSectionPadding{
+    padding-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.iconPulledLeft{
+    padding-left: 0%;
+    padding-right:55%;
     cursor: pointer;
 }

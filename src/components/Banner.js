@@ -3,15 +3,15 @@ import Logo from '../assets/logo.jpg'
 
 function Banner(){
     return(
-        <div className="hero is-small is-light is-bold">
+        <div className="hero is-small is-bold coloredBG">
             <div class="hero-body">
     <div class="container">
-      <h1 class="title">
-        <img src={Logo}/>
-      </h1>
-      <h2 class="subtitle">
-        Peace Love BreastFeeding
+      <h2 class="subtitle ">
+        <img src={Logo} className="roundLogo"/>
       </h2>
+      {/* <h2 class="subtitle">
+        Peace Love BreastFeeding
+      </h2> */}
     </div>
   </div>
         </div>

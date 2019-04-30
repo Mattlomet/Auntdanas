@@ -48,8 +48,9 @@ a, a:hover{
 }
 .cancelSectionPadding{
     padding-top: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
 }
 .iconPulledLeft{
     padding-left: 0%;

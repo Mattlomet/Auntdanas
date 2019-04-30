@@ -13,22 +13,31 @@ function Billing(){
       NO CODING EXISTS for an interactive, multi-patient visit with a mother as the feeding vessel and baby as the receiver. We know the visit always includes a dyad and we know that sometimes the main problem is the baby and not the mother's breasts, but what is the best way to code and bill for this? 
       </h3>
       <p className="paragraphMargin">
-      My Concern Number 1: Parents have 30 days to enroll their child in an insurance plan. This leads to gaps in coverage and therefore possible issues with your reimbursement or delay in your reimbursement.
+      <strong>
+      My Concern Number 1:
+          </strong>
+          <br/>
+          Parents have 30 days to enroll their child in an insurance plan. This leads to gaps in coverage and therefore possible issues with your reimbursement or delay in your reimbursement.
       </p>
       <p className="paragraphMargin">
-      My Concern Number 2: What if Baby has Aetna and not Mom? Will they consider the visits with baby exempt from copay per the ACA?
+      <strong>My Concern Number 2:</strong><br/>
+       What if Baby has Aetna and not Mom? Will they consider the visits with baby exempt from copay per the ACA?
       </p>
       <p className="paragraphMargin">
-      My Concern Number 3: When documenting, can you, the IBCLC, justify the time used when billing for Mom and Baby in the same visit? The approved codes for IBCLCs involve time.
+      <strong>My Concern Number 3:</strong><br/>
+       When documenting, can you, the IBCLC, justify the time used when billing for Mom and Baby in the same visit? The approved codes for IBCLCs involve time.
       </p>
       <p className="paragraphMargin">
-      My Concern Number 4: If Billing for Mom and Baby in the same visit, the same day, based upon current coding, could your documentation back up what you actually did with each of them? You have to "back it up" with documentation on time spent and/or level of decision making.
+      <strong>My Concern Number 4:</strong><br/>
+       If Billing for Mom and Baby in the same visit, the same day, based upon current coding, could your documentation back up what you actually did with each of them? You have to "back it up" with documentation on time spent and/or level of decision making.
       </p>
       <p className="paragraphMargin">
-      My Concern Number 5: We know a baby receiving breast milk is a "preventative" or "risk-reducing" measure hopefully ensuring future good health, but can we consider it "counseling" for the infant? If it is a feeding issue for baby, is that an allowable covered expense under the current language of the Affordable Care Act for IBCLCs? 
+      <strong>My Concern Number 5:</strong><br/>
+       We know a baby receiving breast milk is a "preventative" or "risk-reducing" measure hopefully ensuring future good health, but can we consider it "counseling" for the infant? If it is a feeding issue for baby, is that an allowable covered expense under the current language of the Affordable Care Act for IBCLCs? 
       </p>
-      <p className="paragraphMargin notifcation">
-      My Current Answer: 
+      <p className="paragraphMargin">
+      <strong>My Current Answer:</strong><br/>
+       
 I think the IBCLC can also bill for baby, but the baby is a separate person, so it requires a separate patient file and documentation relevant to an evaluation of a baby.
       </p>
     

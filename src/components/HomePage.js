@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import Banner from './Banner'
 import Billing from './Content/Billing'
+import FirstSteps from './Content/FirstSteps'
+
 import NavBar from './NavBar.js'
 class HomePage extends Component{
   constructor(props){
@@ -15,7 +17,7 @@ class HomePage extends Component{
 
     if(event.target.id === "steps"){
       this.setState({
-        renderedComponent: "first3steps",
+        renderedComponent: <FirstSteps/>,
         loadedContent: false
       })
     }if( event.target.id === "where"){
@@ -65,7 +67,7 @@ class HomePage extends Component{
         ?<div>
 <div class="columns outerMargin">
         <div class="column homePageBox  blueText" id="steps" onClick={this.contentRender}>
-        First 3 Steps
+        First Steps
         </div>
         <div class="column homePageBox  blueText" id="where" onClick={this.contentRender}>
         Where Are You Now?
@@ -75,7 +77,7 @@ class HomePage extends Component{
         </div>
         
         </div>
-        <div class="columns outerMargin">
+        <div class="columns outerMargin bottomMargin">
         <div class="column homePageBox  blueText" id="billing" onClick={this.contentRender}>
         Billing for Mom & Dad
         </div>

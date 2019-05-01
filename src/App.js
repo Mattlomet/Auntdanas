@@ -24,7 +24,7 @@ class App extends Component{
         </div>
         <div class="columns landingPageParent ">
   <div class="column landingPageBox  ">
-      <a href="https://www.paperlessibclc.com/store/billing-and-coding" target="_blank">
+      <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding" target="_blank">
     <div className="is-size-2 blueText">
       Crash Course
     </div>

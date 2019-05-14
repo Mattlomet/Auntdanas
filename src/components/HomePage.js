@@ -65,6 +65,14 @@ class HomePage extends Component{
       {
         (this.state.loadedContent)
         ?<div>
+          <div>
+<span className="icon is-large iconPulledLeft">
+
+            <i className="fas fa-3x fa-long-arrow-alt-left" onClick={this.props.toggleLandingPage} ></i>
+         
+            </span>
+          </div>
+          
 <div class="columns outerMargin">
         <div class="column homePageBox  blueText" id="steps" onClick={this.contentRender}>
         First Steps

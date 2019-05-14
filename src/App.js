@@ -3,6 +3,7 @@ import HomePage from './components/HomePage'
 import BFeducation from './components/BFeducation'
 import Banner from './components/Banner'
 import './assets/app.css'
+import { pathToFileURL } from 'url';
 
 class App extends Component {
   constructor() {
@@ -14,14 +15,19 @@ class App extends Component {
   }
   toggleHomePage = () => {
     this.setState({ 
-      renderedComponent: <HomePage/>,
+      renderedComponent: <HomePage toggleLandingPage={this.toggleLandingPage}/>,
       firstPage: false
    })
   }
   toggleBFEducation = () => {
     this.setState({
-      renderedComponent: <BFeducation />,
+      renderedComponent: <BFeducation toggleLandingPage={this.toggleLandingPage} />,
       firstPage: false
+    })
+  }
+  toggleLandingPage = ()=>{
+    this.setState({
+      firstPage: true
     })
   }
   render() {

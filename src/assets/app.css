@@ -14,14 +14,23 @@
 }
 .landingPageParent{
     border-top: 7px double #98047E;
+
 }
 .landingPageBox{
-    margin: 5%;
+    margin-top: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 2%;
     padding: 2.5%;
     box-shadow: 2px -3px 25px -18px black;
     border: 2px solid rgba(160, 160, 160, 0.212);
     cursor: pointer;
-    margin-bottom: 10%;
+}
+.landingPageColumn{
+    margin: 5%;
+    margin-top: 1.5%;
+    height: 50vh;
+    overflow: auto;
 }
 .homePageBox{
     margin: 2.5%;
@@ -36,6 +45,7 @@
     border-radius: 100%;
 }
 .blueText{
+    
     color: #6196C0;
 }
 .purpleText{

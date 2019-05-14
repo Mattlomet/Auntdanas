@@ -79,7 +79,7 @@ class HomePage extends Component{
         </div>
         <div class="columns outerMargin bottomMargin">
         <div class="column homePageBox  blueText" id="billing" onClick={this.contentRender}>
-        Billing for Mom & Dad
+        Billing for Mom & Baby
         </div>
         <div class="column homePageBox  blueText" id="docs"onClick={this.contentRender}>
         Integration with Docs

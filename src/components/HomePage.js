@@ -96,7 +96,21 @@ class HomePage extends Component{
         FAQs
         </div>
         </div>
+        <div class="columns outerMargin bottomMargin">
+        
+       
+        <div class="column homePageBox lastBox blueText" >
+        <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding">
+        Crash Course
+        <p className="purpleText">
+        <br/>
+          in billing & reimbursement for IBCLC's
+        </p>
+        </a>
         </div>
+        </div>
+        </div>
+        
         
         :<div>
           <NavBar resetProps={this.navReset}/>

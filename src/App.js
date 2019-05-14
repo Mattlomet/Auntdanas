@@ -79,7 +79,7 @@ class App extends Component {
                 If you have signed up or want to sign up with Aetna or any insurance company that wants IBCLCs as in-network providers, this is very important information you need. I am offering a Crash Course In Coding, Documentation and Billing for In-Network IBCLCs. When you sign up to receive direct payments from an insurance company you must comply with current coding, documentation and billing guidelines.
                <p className="purpleText is-size-6">
                   <br />
-                  By purchasing the 3rd edition at <a href="www.paperlessibclc.com">www.paperlessibclc.com</a> now you will be able to receive proper reimbursement for the valuable services you perform.
+                  By purchasing the 3rd edition at <a href="https://www.paperlessibclc.com/store/billing-and-coding">www.paperlessibclc.com</a> now you will be able to receive proper reimbursement for the valuable services you perform.
                </p>
               </h1>
               <h2 className="blueText is-size-2">

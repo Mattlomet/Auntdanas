@@ -1,51 +1,51 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import HomePage from './components/HomePage'
 import Banner from './components/Banner'
 import './assets/app.css'
 
-class App extends Component{
-  constructor(){
+class App extends Component {
+  constructor() {
     super()
     this.state = {
-      firstPage : true
+      firstPage: true
     }
   }
-  toggleHomePage = ()=>{
-    this.setState({firstPage:false})
+  toggleHomePage = () => {
+    this.setState({ firstPage: false })
   }
-  render(){
-    return(
-      
+  render() {
+    return (
+
       (this.state.firstPage)
-      ?<div className="mainContainer hero ">
-        <div>
-        <Banner/>
+        ? <div className="mainContainer hero ">
+          <div>
+            <Banner />
 
-        </div>
-        <div class="columns landingPageParent ">
-  <div class="column landingPageBox  ">
-      <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding" target="_blank">
-    <div className="is-size-2 blueText">
-      Crash Course
+          </div>
+          <div class="columns landingPageParent ">
+            <div class="column landingPageBox  ">
+              <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding" target="_blank">
+                <div className="is-size-2 blueText">
+                  Crash Course
     </div>
-    <p className="purpleText">
-    in billing & reimbursment for IBCLC's
+                <p className="purpleText">
+                  in billing & reimbursment for IBCLC's
     </p>
-      </a>
-  </div>
-  <div class="column landingPageBox ">
-  <div className="is-size-2 blueText" onClick={this.toggleHomePage}>
-      Lactation Billing
+              </a>
+            </div>
+            <div class="column landingPageBox ">
+              <div className="is-size-2 blueText" onClick={this.toggleHomePage}>
+                Lactation Billing
     </div>
-    <p className="purpleText">
-    coding & billing, insurance info, lactation consultant, IBCLC's
-
+              <p className="purpleText">
+                coding & billing, insurance info, lactation consultant, IBCLC's
+            
     </p>
-  </div>
-</div>
+            </div>
+          </div>
         </div>
-      :<div> 
-        <HomePage/>
+        : <div>
+          <HomePage />
         </div>
     )
   }

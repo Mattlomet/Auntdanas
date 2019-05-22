@@ -96,18 +96,19 @@ class HomePage extends Component{
         FAQs
         </div>
         </div>
-        <div class="columns outerMargin bottomMargin">
+        <div class="columns outerMargin bottomMargin lastbox">
         
-       
-        <div class="column homePageBox lastBox blueText" >
+        <div className="column"></div>
         <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding">
+        <div class="column homePageBox lastBox blueText" >
         Crash Course
         <p className="purpleText">
         <br/>
           in billing & reimbursement for IBCLC's
         </p>
-        </a>
         </div>
+        </a>
+        <div className="column"></div>
         </div>
         </div>
         

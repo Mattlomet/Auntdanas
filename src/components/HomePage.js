@@ -65,6 +65,14 @@ class HomePage extends Component{
       {
         (this.state.loadedContent)
         ?<div>
+          <div>
+<span className="icon is-large iconPulledLeft">
+
+            <i className="fas fa-3x fa-long-arrow-alt-left" onClick={this.props.toggleLandingPage} ></i>
+         
+            </span>
+          </div>
+          
 <div class="columns outerMargin">
         <div class="column homePageBox  blueText" id="steps" onClick={this.contentRender}>
         First Steps
@@ -79,7 +87,7 @@ class HomePage extends Component{
         </div>
         <div class="columns outerMargin bottomMargin">
         <div class="column homePageBox  blueText" id="billing" onClick={this.contentRender}>
-        Billing for Mom & Dad
+        Billing for Mom & Baby
         </div>
         <div class="column homePageBox  blueText" id="docs"onClick={this.contentRender}>
         Integration with Docs
@@ -88,7 +96,21 @@ class HomePage extends Component{
         FAQs
         </div>
         </div>
+        <div class="columns outerMargin bottomMargin">
+        
+       
+        <div class="column homePageBox lastBox blueText" >
+        <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding">
+        Crash Course
+        <p className="purpleText">
+        <br/>
+          in billing & reimbursement for IBCLC's
+        </p>
+        </a>
         </div>
+        </div>
+        </div>
+        
         
         :<div>
           <NavBar resetProps={this.navReset}/>

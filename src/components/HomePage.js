@@ -2,6 +2,12 @@ import React, {Component} from 'react'
 import Banner from './Banner'
 import Billing from './Content/Billing'
 import FirstSteps from './Content/FirstSteps'
+import FAQ from './Content/Faq'
+import Integration from './Content/IntegratewithDocs'
+import WhereAreYou from './Content/WhereAreYou'
+
+
+
 
 import NavBar from './NavBar.js'
 class HomePage extends Component{
@@ -22,7 +28,7 @@ class HomePage extends Component{
       })
     }if( event.target.id === "where"){
       this.setState({
-        renderedComponent: "hello",
+        renderedComponent: <WhereAreYou/>,
         loadedContent: false
 
       })
@@ -40,13 +46,13 @@ class HomePage extends Component{
       })
     } if( event.target.id === "docs"){
       this.setState({
-        renderedComponent: "hello",
+        renderedComponent: <Integration/>,
         loadedContent: false
 
       })
     }else if( event.target.id === "faqs"){
       this.setState({
-        renderedComponent: "hello",
+        renderedComponent: <FAQ/>,
         loadedContent: false
 
       })
@@ -98,7 +104,7 @@ class HomePage extends Component{
         </div>
         <div class="columns outerMargin bottomMargin lastbox">
         
-        <div className="column"></div>
+        <div className="column "></div>
         <a className="anchorReset" href="https://www.paperlessibclc.com/store/billing-and-coding">
         <div class="column homePageBox lastBox blueText" >
         Crash Course
@@ -108,7 +114,7 @@ class HomePage extends Component{
         </p>
         </div>
         </a>
-        <div className="column"></div>
+        <div className="column  "></div>
         </div>
         </div>
         
